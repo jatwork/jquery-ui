@@ -16,11 +16,30 @@ var
 		"jquery.ui.effect.js"
 	],
 
-	uiFiles = coreFiles.map(function( file ) {
-		return "ui/" + file;
-	}).concat( expandFiles( "ui/*.js" ).filter(function( file ) {
-		return coreFiles.indexOf( file.substring(3) ) === -1;
-	})),
+	uiFiles = [
+		"ui/jquery.ui.core.js",
+		"ui/jquery.ui.widget.js",
+		"ui/jquery.ui.mouse.js",
+		"ui/jquery.ui.position.js",
+		"ui/jquery.ui.draggable.js",
+		"ui/jquery.ui.sortable.js",
+		"ui/jquery.ui.slider.js",
+		"ui/jquery.ui.tabs.js",
+		"ui/jquery.ui.effect.js",
+		"ui/jquery.ui.effect-blind.js",
+		"ui/jquery.ui.effect-bounce.js",
+		"ui/jquery.ui.effect-clip.js",
+		"ui/jquery.ui.effect-drop.js",
+		"ui/jquery.ui.effect-explode.js",
+		"ui/jquery.ui.effect-fade.js",
+		"ui/jquery.ui.effect-fold.js",
+		"ui/jquery.ui.effect-highlight.js",
+		"ui/jquery.ui.effect-pulsate.js",
+		"ui/jquery.ui.effect-scale.js",
+		"ui/jquery.ui.effect-shake.js",
+		"ui/jquery.ui.effect-slide.js",
+		"ui/jquery.ui.effect-transfer.js"
+	],
 
 	allI18nFiles = expandFiles( "ui/i18n/*.js" ),
 
